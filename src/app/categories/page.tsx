@@ -94,7 +94,7 @@ const categories = [
 
 export default function CategoriesPage() {
   const router = useRouter();
-  const [hoveredCategory, setHoveredCategory] = useState(null);
+  const [hoveredCategory, setHoveredCategory] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600">
