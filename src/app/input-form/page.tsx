@@ -63,7 +63,7 @@ export default function ProductInputForm() {
 
     setIsLoading(true);
     try {
-        const response = await fetch('http://localhost:8080/api/product-recommendations', {
+        const response = await fetch('http://ec2-3-144-111-130.us-east-2.compute.amazonaws.com:8080/api/product-recommendations', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
