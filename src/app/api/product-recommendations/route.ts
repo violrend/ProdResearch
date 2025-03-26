@@ -62,7 +62,7 @@ async function generateFitScoreAndProsCons(product: any, userPreferences: any) {
 
 
 async function searchProducts(query: string, budget: [number, number], numResults = 5, maxPosition = 10) {
-    const url = `https://serpapi.com/search.json?engine=google_shopping&q=${encodeURIComponent(query)}&num=${numResults}&price=${budget[0]}..${budget[1]}&currency=USD&api_key=${SERPAPI_KEY}`
+    const url = `https://serpapi.com/search.json?engine=google_shopping&q=${encodeURIComponent(query)}&num=${numResults}&price=${budget[0]}..${budget[1]}&currency=USD&api_key=fa6a4af9abc8a3a5da6cac469894cd004f7de1d814127f5fa34c3ad8b63f46b0`
 
     try {
         const response = await fetch(url)
